@@ -8,14 +8,14 @@ import { Cinema } from '../../shared/cinema/cinema';
   styleUrl: './home.css',
 })
 export class Home {
-  isHiden = false;
+  isHidden = false;
   @HostListener('window:wheel')
   onWheel() {
-    this.isHiden = true;
+    this.isHidden = true;
   }
 
   @HostListener('window:click')
   onClick() {
-    this.isHiden = true;
+    this.isHidden = true;
   }
 }

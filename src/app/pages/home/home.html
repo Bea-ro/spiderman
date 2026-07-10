@@ -1,5 +1,6 @@
 <div class="home-container">
-  <img class="tela-cover" src="/920015_231899_1.webp" alt="telaraña" [class.hidden]="isHiden" />
+  <img class="tela-cover" src="/920015_231899_1.webp" alt="telaraña" [class.hidden]="isHidden" />
+
   <section class="image-and-video-container">
     <img class="spiderman-eyes" src="/spiderman-eyes.png" alt="spiderman" />
     <div class="video-container">
@@ -13,5 +14,7 @@
       </iframe>
     </div>
   </section>
+  @if(isHidden) {
   <app-cinema></app-cinema>
+  }
 </div>
