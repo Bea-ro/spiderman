@@ -1,12 +1,9 @@
-:host {
-  max-width: 50%;
-}
-
 .cinema-container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 12px;
 }
 
 .phrase {
@@ -29,4 +26,11 @@
   color: var(--color-red);
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  :host {
+    margin-top: -236px;
+    z-index: 99;
+  }
 }
