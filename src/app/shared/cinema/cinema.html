@@ -1,0 +1,7 @@
+<div class="cinema-container">
+  <ng-container *ngIf="phraseState$ | async as state">
+    <h1 class="phrase" [class.visible]="state.visible" [class.final]="state.final">
+      {{ state.text }}
+    </h1>
+  </ng-container>
+</div>

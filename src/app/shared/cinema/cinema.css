@@ -1,0 +1,32 @@
+:host {
+  max-width: 50%;
+}
+
+.cinema-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phrase {
+  opacity: 0;
+  transform: scale(0.97);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  color: white;
+  font-size: clamp(2rem, 4vw, 5rem);
+  text-align: center;
+  padding: 2rem;
+}
+
+.phrase.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.phrase.final {
+  color: var(--color-red);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}

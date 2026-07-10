@@ -1,0 +1,34 @@
+.home-container {
+  display: flex;
+}
+.tela-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.6;
+}
+.tela-cover.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.spiderman-eyes {
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+}
+.image-and-video-container {
+  position: relative;
+  min-height: 100vh;
+  width: 705px;
+}
+iframe {
+  position: absolute;
+  top: 100px;
+  max-width: 78%;
+}
+
+iframe {
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 90% 100%, 0 100%);
+}

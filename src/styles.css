@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-dark-blue: #2b3685;
+  --color-blue: #447bbe;
+  --color-dark-red: #b11312;
+  --color-red: #df1f2e;
+
+  --color-white: #ffffff;
+  --color-light: rgb(222, 222, 255);
+  --color-extra-light: #efedfb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(43, 54, 133, 1) 0%, rgba(68, 123, 190, 1) 100%);
+}
+
+ul {
+  list-style-type: none;
+}
